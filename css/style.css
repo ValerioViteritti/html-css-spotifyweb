@@ -21,10 +21,15 @@ body{
     height: 100%;
 }
 
+a{
+    color: #818387;
+}
 
 /* LEFT */
 
 #left{
+    min-width: 350px;
+    max-width: 350px;
     width: 350px;
     background-color: black;
     min-height: 500px;
@@ -51,10 +56,25 @@ body{
     position: fixed;
     z-index: 900;
     height: 100px;
-    width: 100%;
-    background-color: black;
-    opacity: 0.3;
+    width: calc(100% - 350px);
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
 
+}
+#head a{
+    /* position: absolute;
+    top: 40%;
+    right: 350px; */
+    min-width: 200px;
+    color: white;
+    margin-right: 40px;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 10px 30px;
+    
 }
 
 #table{
@@ -72,8 +92,10 @@ body{
 }
 
 #action-list{
+    font-weight: bold;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -83,11 +105,56 @@ body{
     gap: 20px;
 }
 
+.album{
+    position: relative;
+}
+
+.album-info{
+    width: 12vw;
+    height: 17vw;
+
+
+
+}
+
+.album i{
+    display: none;
+}
+
+.album:hover .opacita{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+
+
+.album:hover i{
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    
+    
+}
+
 #table .album{
     width: 12vw;
     height: 12vw;
     min-width: 100px;
     min-height: 100px;
+}
+#table .album img{
+    width: 100%;
 }
 
 
