@@ -1,0 +1,92 @@
+/*REGOLE GENERALI*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    border: 0.5px dashed red;
+}
+
+body{
+    overflow: hidden;
+    font-family: Montserrat;
+    color: #818387;
+}
+
+
+
+#big{
+    display: flex;
+}
+
+
+/* LEFT */
+
+#left{
+    width: 350px;
+    background-color: black;
+    min-height: 500px;
+    height: 85vh;
+
+}
+
+
+/* RIGHT */
+
+#right{
+    width: 100%;
+    background-color: #141922;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+
+}
+
+#head{
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.3;
+
+}
+
+#body{
+    height: 100%;
+    width: 100%;
+}
+
+#action-list{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.disc{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#body .album{
+    width: 12vw;
+    height: 12vw;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+
+
+
+
+/* PLAYER */
+
+#player{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #282828;
+    min-height: 150px;
+    height: 15vh;
+    z-index: 900;
+}
