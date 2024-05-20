@@ -14,6 +14,11 @@ body{
     color: #818387;
 }
 
+:root{
+    font-size: 12px;
+
+}
+
 
 
 #big{
@@ -21,21 +26,96 @@ body{
     height: 100%;
 }
 
-a{
-    color: #818387;
-}
+
 
 /* LEFT */
 
 #left{
+    position: relative;
     min-width: 350px;
     max-width: 350px;
     width: 350px;
     background-color: black;
     min-height: 500px;
     height: 85vh;
-
 }
+
+#left>a img{
+    width: 150px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+#left div a{    
+    color: #818387;
+}
+
+#left li:hover a{
+    color: white;
+}
+
+#left div a img{
+    width: 10%;
+   
+    padding-left: 10px;
+}
+#left li{
+    width: 100%;
+    font-weight: bold;
+}
+
+#border-special li:hover{
+     border-left: 2px solid greenyellow;
+}
+#left ul{
+    margin-bottom: 20px;
+}
+#left h4{
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+#left>div div{
+    font-weight: bold;
+    display: inline;
+    vertical-align: top;
+    line-height: 35px;
+    margin-left: 5px;
+}
+
+#left>div>a{
+    /* display: inline; */
+}
+
+#left>div>a i{ 
+    font-size: 34px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.fa-square-plus:hover, #left>div>div a:hover {
+    color: white;
+}
+#add-playlist{
+    height: 30vh;
+    margin-left: 10px;
+    overflow-y: scroll;
+}
+#add-playlist li{
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+
+
+#left-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    width: 100px;
+}
+
+
 
 
 /* RIGHT */
@@ -47,6 +127,7 @@ a{
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
+    overflow-x: hidden;
     
     
 
@@ -65,9 +146,6 @@ a{
 
 }
 #head a{
-    /* position: absolute;
-    top: 40%;
-    right: 350px; */
     min-width: 200px;
     color: white;
     margin-right: 40px;
@@ -85,10 +163,18 @@ a{
     gap: 30px;
     margin-top: 100px;
     margin-bottom: 15vh;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-#table .row{
+#table .row2{
+    margin-bottom: 60px;
     
+}
+#table h2{
+    font-size: 1.6rem;
+    color: white;
+    margin-bottom: 20px;
 }
 
 #action-list{
@@ -99,10 +185,21 @@ a{
     gap: 30px;
 }
 
+#action-list a{
+    color: #818387;
+    font-size: 12px;
+}
+
+#action-list a:hover{
+    color: white;
+}
+
+
+
 .disc{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 60px 20px;
 }
 
 .album{
@@ -112,9 +209,6 @@ a{
 .album-info{
     width: 12vw;
     height: 17vw;
-
-
-
 }
 
 .album i{
@@ -147,6 +241,26 @@ a{
     
 }
 
+.album-info h4{
+    font-size: 1.1rem;
+    color: white;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.album-info h5{
+    text-align: center;
+
+}
+
+.album-info a{
+    color: white;
+}
+
+.album-info h5 a{
+    color: #818387;
+}
+
 #table .album{
     width: 12vw;
     height: 12vw;
@@ -155,6 +269,10 @@ a{
 }
 #table .album img{
     width: 100%;
+}
+
+.row h5{
+    margin-bottom: 25px;
 }
 
 
