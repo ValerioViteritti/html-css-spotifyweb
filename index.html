@@ -41,7 +41,10 @@
                         <li><a href="#"><img src="img/libreria.svg" alt=""> La tua libreria</a></li>
                     </ul>
                     <h4>PLAYLIST</h4>
-                    <a href="#"><i class="fa-solid fa-square-plus"></i></a> <div><a href="#">Crea Playlist</a></div>
+                    <div id="new-playlist">
+                        <a href="#"><i class="fa-solid fa-square-plus"></i></a> <div><a href="#">Crea Playlist</a></div>
+                    </div>
+                    
                     <ul id="add-playlist">
                         <li><a href="#">Nome Playlist</a></li>
                         <li><a href="#">Nome Playlist</a></li>
@@ -56,12 +59,12 @@
                 <div id="left-bottom">
                     <div id="download">
                         <img src="img/download.svg" alt=""> 
-                        <span> Installa app</span>
+                        <a href="">Installa app</a>
                     </div>
                     <hr>
                     <div>
                         <div id="profile"><img src="img/profile.svg" alt=""></div>
-                        <h4>John Doe</h4>
+                        <a href="#" id="name-profile">John Doe</a>
                     </div>
                     
 
@@ -285,7 +288,7 @@
                 <div>
                     <span>0:25</span>
                     <div id="big-rigth-bar-grey">
-                        <div id="big-right-bar-white"></div>
+                        <div id="big-right-bar-white"><div class="bullet"></div></div>
                     </div>
                     <span>4:25</span>
 
@@ -300,13 +303,14 @@
 
 
             <!-- RIGHT -->
-            <div class="flex">
+            <div class="player-right flex">
                 <i class="fa-solid fa-list"></i>
                 <i class="fa-solid fa-desktop"></i>
                 <i class="fa-solid fa-volume-high"></i>
 
                 <div id="rigth-bar-grey">
-                    <div id="right-bar-white"></div>
+                    <div id="right-bar-white"><div class="bullet"></div></div>
+                    
                 </div>
 
                 

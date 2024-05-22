@@ -88,18 +88,18 @@ body{
     margin-left: 5px;
 }
 
-#left>div>a{
-    /* display: inline; */
-}
 
-#left>div>a i{ 
+#new-playlist>a i{ 
     font-size: 34px;
-    margin-left: 10px;
+    margin-left: 5px;
     margin-bottom: 10px;
 }
-.fa-square-plus:hover, #left>div>div a:hover {
+
+#new-playlist:hover a{
     color: white;
 }
+
+
 #add-playlist{
     height: 30vh;
     margin-left: 10px;
@@ -142,6 +142,10 @@ body{
     margin-left: 10px;
 }
 
+#profile img:hover{
+    background-color: rgb(134, 135, 135);
+}
+
 #left-bottom h4{
     display: inline;
     height: 50px;
@@ -152,6 +156,14 @@ body{
     margin-left: 15px;
     margin-top: 5px;
     margin-bottom: 15px;
+}
+
+
+#left-bottom a#name-profile{
+    display: inline-block;
+    color: white;
+    font-size: 1.1rem;
+    
 }
 
 
@@ -194,6 +206,10 @@ body{
     
 }
 
+#head a:hover{
+    padding: 14px 38px;
+}
+
 #table{
     height: 100%;
     width: 100%;
@@ -231,6 +247,8 @@ body{
 
 #action-list a:hover{
     color: white;
+    border-bottom: 2px solid greenyellow ;
+    
 }
 
 
@@ -345,6 +363,19 @@ body{
     color: white;
 }
 
+.bullet{
+    display: none;
+    width: 14px;
+    height: 14px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    
+}
+
+
+
+
+
 
 
 /* LEFT */
@@ -366,11 +397,27 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+#play-title h5{
+    color: white;
+}
+#play-title h6:hover{
+    color: white;
+    cursor: pointer;
+}
 
 
 #play-left .flex{
     margin-left: 100px;
 
+}
+
+.fa-heart, .fa-folder{
+    color: #818387;
+}
+
+.fa-heart:hover, .fa-folder:hover{
+    color: white;
+    cursor: pointer;
 }
 
 /* CENTER */
@@ -383,18 +430,23 @@ div#player-button{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 28px;
+    font-size: 2.4rem;
     
     
 
 }
 
-div#player-button div:first-child{
+div#player-button div i:hover{
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+
+div#player-button>div:first-child{
     display: flex;
     gap: 15px;
 }
 
-div#player-button div:last-child{
+div#player-button>div:last-child{
     display: flex;
     align-items: center;
     gap: 25px;
@@ -402,39 +454,71 @@ div#player-button div:last-child{
 
 #big-rigth-bar-grey{
     
-    height: 3px;
+    height: 5px;
     width: 500px;
     background-color: #818387;
 
 }
 
 #big-right-bar-white{
-    height: 3px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 5px;
     width: 80px;
     background-color: #ffffff;
 
 }
 
+#big-right-bar-white:hover{
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+#big-right-bar-white:hover .bullet{
+    display: block;
+}
 
 
 
 
 
 
-
-
+#player-button span{
+    font-size: 0.8rem;
+}
 
 /* RIGHT */
 
 .flex #rigth-bar-grey{
-    height: 3px;
+    height: 5px;
     width: 100px;
     background-color: #818387;
 }
 
 .flex #right-bar-white{
-    height: 3px;
-    width: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 5px;
+    width: 40px;
     background-color: #ffffff;
 
+}
+.player-right i:hover{
+    cursor: pointer;
+    font-size: 1.05rem;
+
+}
+
+
+
+.flex #right-bar-white:hover .bullet{
+    display: block;
+    
+}
+
+.flex #right-bar-white:hover{
+    background-color: greenyellow;
+    cursor: pointer;
 }
