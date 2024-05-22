@@ -132,6 +132,7 @@ body{
 
 
 #left-bottom{
+    background-color: black;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -350,13 +351,14 @@ body{
 
 
 
-#table .row2{
+/* #table .row2{
     margin-bottom: 60px;
     
-}
+} */
 #table h2{
     font-size: 1.6rem;
     color: white;
+    margin-top: 110px;
     margin-bottom: 20px;
 }
 
@@ -396,7 +398,7 @@ body{
 @media screen and (max-width: 824px) {
 
     .disc{
-        gap: 120px 30px;
+        gap: 171px 30px;
     }
     
 }
@@ -416,16 +418,23 @@ body{
 
 @media screen and (max-width:600px) {
     .album-info{
-        width: 20vw;
-        height: 22vw;
+        width: 37vw;
+        height: 25vw;
     }
 
     #table .album{
-        width: 21vw;
-        height: 20vw;
+        width: 40vw;
+        height: 39vw;
         min-width: 100px;
         min-height: 100px;
     }
+
+
+
+
+
+
+
 
 
     
