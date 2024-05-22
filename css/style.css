@@ -511,7 +511,11 @@ body{
 
 
 #table .album img{
-    width: 100%;
+    width: 100%; 
+}
+
+#table .album .img-circle{
+    border-radius: 50%;
 }
 
 .row h5{
