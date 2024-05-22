@@ -33,11 +33,30 @@ body{
 #left{
     position: relative;
     min-width: 250px;
-    max-width: 250px;
     width: 250px;
     background-color: black;
     min-height: 500px;
     height: 90vh;
+}
+
+
+@media screen and (max-width: 599px) {
+    
+
+
+    #left{
+        display: none;
+    }
+
+    #left-b{
+        display: block;
+    }
+    
+
+    
+
+
+    
 }
 
 #left-layout{
@@ -48,8 +67,9 @@ body{
 
 #left>a img{
     width: 150px;
-    margin-left: 10px;
+    margin-left: 15px;
     margin-bottom: 20px;
+    margin-top: 15px;
 }
 #left div a{    
     color: #818387;
@@ -59,10 +79,9 @@ body{
     color: white;
 }
 
-#left div a img{
+#left div li a img{
     width: 15%;
-   
-    padding-left: 10px;
+    margin-left: 15px;
 }
 #left li{
     width: 100%;
@@ -77,22 +96,21 @@ body{
 }
 #left h4{
     color: white;
-    margin-left: 10px;
+    margin-left: 15px;
     margin-bottom: 10px;
 }
 #left>div div{
     font-weight: bold;
     display: inline;
-    vertical-align: top;
     line-height: 35px;
-    margin-left: 5px;
+    /* margin-left: 15px; */
 }
 
 
 #new-playlist>a i{ 
     font-size: 34px;
-    margin-left: 5px;
     margin-bottom: 10px;
+    margin-left: 15px;
 }
 
 #new-playlist:hover a{
@@ -102,7 +120,7 @@ body{
 
 #add-playlist{
     height: 30vh;
-    margin-left: 10px;
+    margin-left: 15px;
     overflow-y: scroll;
 }
 #add-playlist li{
@@ -125,25 +143,34 @@ body{
     
 }
 
-#download img{
-    width: 14px;
-    margin-left: 10px;
+#download a img{
+    width: 7%;
+    margin-left: 15px;
+    
 }
 
-#line{
-    width: 200px;
-    border-bottom: 8px solid rgb(83, 84, 84);
+#app-install{
+    position: absolute;
+    bottom: 74%;
+    left: 18%;
+
+
+
+
 }
+
 
 #profile img{
     border-radius: 50%;
     background-color: rgb(83, 84, 84);
-    width: 1.7rem;
-    margin-left: 10px;
+    width: 30px;
+    margin-left: 15px;
+    margin-bottom: 20px;
 }
 
 #profile img:hover{
     background-color: rgb(134, 135, 135);
+    cursor: pointer;
 }
 
 #left-bottom h4{
@@ -159,11 +186,85 @@ body{
 }
 
 
-#left-bottom a#name-profile{
-    display: inline-block;
+#left-bottom #name-profile{
+    position: absolute;
+    bottom: 23%;
+    left: 24%;
     color: white;
     font-size: 1.1rem;
     
+    
+}
+
+/* LEFT-B */
+
+@media screen and (min-width: 600px) {
+    #left-b{
+    display: none;
+}
+}
+
+#left-b-top>a>img{
+
+    width: 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+
+}
+
+#download-b img{
+    width: 16px;
+    margin-top: 5px;
+    margin-left: 17px;
+}
+
+#profile-b img{
+    border-radius: 50%;
+    background-color: rgb(83, 84, 84);
+
+    width: 24px;
+    margin-top: 15px;
+    margin-left: 13px;
+
+}
+
+
+
+
+
+
+
+
+
+#left-b-spot{
+
+    position: relative;
+    min-width: 50px;
+    
+    width: 50px;
+    background-color: black;
+    min-height: 500px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    
+
+}
+
+#left-b-top{
+    
+    width: 50px;
+    height: 100px;
+    
+}
+
+#left-b-bottom{
+    
+    width: 50px;
+    height: 100px;
+
 }
 
 
@@ -196,6 +297,31 @@ body{
     
 
 }
+
+@media screen and (max-width: 599px) {
+    #head{
+       
+        width: calc(100% - 50px);
+       
+        
+    
+    }
+
+
+   
+    
+
+    
+
+
+    
+}
+
+
+
+
+
+
 #head a{
     min-width: 200px;
     color: white;
@@ -222,6 +348,8 @@ body{
     margin-right: 20px;
 }
 
+
+
 #table .row2{
     margin-bottom: 60px;
     
@@ -240,6 +368,10 @@ body{
     gap: 30px;
 }
 
+
+
+
+
 #action-list a{
     color: #818387;
     font-size: 12px;
@@ -247,7 +379,9 @@ body{
 
 #action-list a:hover{
     color: white;
-    border-bottom: 2px solid greenyellow ;
+    background: 
+    linear-gradient(rgb(64, 255, 0) 0 0) bottom/ 50% 2px no-repeat, 
+    rgba(255, 255, 255,0);
     
 }
 
@@ -259,6 +393,17 @@ body{
     gap: 60px 20px;
 }
 
+@media screen and (max-width: 824px) {
+
+    .disc{
+        gap: 120px 30px;
+    }
+    
+}
+
+
+
+
 .album{
     position: relative;
 }
@@ -268,13 +413,35 @@ body{
     height: 17vw;
 }
 
+
+@media screen and (max-width:600px) {
+    .album-info{
+        width: 20vw;
+        height: 22vw;
+    }
+
+    #table .album{
+        width: 21vw;
+        height: 20vw;
+        min-width: 100px;
+        min-height: 100px;
+    }
+
+
+    
+}
+
+
+
+
+
 .album i{
     display: none;
 }
 
 .album:hover .opacita{
-    width: 100%;
-    height: 100%;
+    width: 100.3%;
+    height: 100.3%;
     background-color: rgba(0, 0, 0, 0.8);
     position: absolute;
     left: 50%;
@@ -318,12 +485,22 @@ body{
     color: #818387;
 }
 
-#table .album{
-    width: 12vw;
-    height: 12vw;
-    min-width: 100px;
-    min-height: 100px;
+
+
+
+@media screen and (min-width:600px) {
+    #table .album{
+        width: 12vw;
+        height: 12vw;
+        min-width: 100px;
+        min-height: 100px;
+    }
+
+
+    
 }
+
+
 #table .album img{
     width: 100%;
 }
@@ -386,8 +563,8 @@ body{
 }
 
 #play-left img{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     margin-left: 10px;
 }
 
@@ -400,6 +577,10 @@ body{
 #play-title h5{
     color: white;
 }
+#play-title h6{
+    font-size: 0.6rem;
+}
+
 #play-title h6:hover{
     color: white;
     cursor: pointer;
@@ -407,12 +588,13 @@ body{
 
 
 #play-left .flex{
-    margin-left: 100px;
+    margin-left: 90px;
 
 }
 
 .fa-heart, .fa-folder{
     color: #818387;
+    font-size: 1.3rem;
 }
 
 .fa-heart:hover, .fa-folder:hover{
@@ -420,7 +602,38 @@ body{
     cursor: pointer;
 }
 
+
+@media screen and (max-width: 1096px) {
+
+    #play-left .flex{
+        margin-left: 50px;
+    
+    }
+
+
+    
+}
+
+
+@media screen and (max-width: 1018px) {
+
+    #play-left .flex{
+        margin-left: 10px;
+    
+    }
+    
+}
+
+
+
+
+
 /* CENTER */
+#player-button{
+    width: 80%;
+}
+
+
 
 div#player-button{
     height: 100px;
@@ -447,6 +660,7 @@ div#player-button>div:first-child{
 }
 
 div#player-button>div:last-child{
+    width: 120%;
     display: flex;
     align-items: center;
     gap: 25px;
@@ -455,7 +669,9 @@ div#player-button>div:last-child{
 #big-rigth-bar-grey{
     
     height: 5px;
-    width: 500px;
+    max-width: 500px;
+    
+    width: 90%;
     background-color: #818387;
 
 }
@@ -465,7 +681,7 @@ div#player-button>div:last-child{
     justify-content: end;
     align-items: center;
     height: 5px;
-    width: 80px;
+    width: 25%;
     background-color: #ffffff;
 
 }
@@ -479,20 +695,69 @@ div#player-button>div:last-child{
     display: block;
 }
 
-
-
-
-
-
 #player-button span{
     font-size: 0.8rem;
 }
 
+
+@media screen and (max-width: 876px) {
+
+    div#player-button>div:last-child{
+        width: 100%;
+        gap: 15px;
+    }
+
+    
+    
+}
+
+@media screen and (max-width: 750px) {
+
+    div#player-button>div:last-child{
+        width: 80%;
+        gap: 5px;
+    }
+
+    
+    
+}
+
+@media screen and (max-width: 600px) {
+
+    div#player-button {
+        
+        font-size: 2rem;
+      }
+
+    
+    
+}
+
+@media screen and (max-width: 580px) {
+
+    div#player-button {
+        
+        font-size: 1.6rem;
+      }
+
+    
+    
+}
+
+
+
+
+
 /* RIGHT */
+
+.player-right{
+    width: 100%;
+    padding-left: 50px;
+}
 
 .flex #rigth-bar-grey{
     height: 5px;
-    width: 100px;
+    width: 50%;
     background-color: #818387;
 }
 
@@ -501,7 +766,7 @@ div#player-button>div:last-child{
     justify-content: end;
     align-items: center;
     height: 5px;
-    width: 40px;
+    width: 40%;
     background-color: #ffffff;
 
 }
@@ -522,3 +787,32 @@ div#player-button>div:last-child{
     background-color: greenyellow;
     cursor: pointer;
 }
+
+@media screen and (max-width: 920px) {
+
+    .player-right div{
+        width: 70%;
+    }
+    
+}
+
+@media screen and (max-width: 780px) {
+
+    .player-right{
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .player-right div{
+        width: 70%;
+        
+    }
+
+
+    
+}
+
+
+
+
+
